@@ -19,13 +19,10 @@ auth_url = "https://accounts.spotify.com/authorize"
 token_url = "https://accounts.spotify.com/api/token"
 api_base_url = "https://api.spotify.com/v1/"
 
-# -------------------- HOME --------------------
 
 @app.route("/")
 def index():
     return "Welcome to my Spotify App <a href='/login'>Login with Spotify</a>"
-
-# -------------------- LOGIN --------------------
 
 @app.route("/login")
 def login():
@@ -40,7 +37,6 @@ def login():
 
     return redirect(f"{auth_url}?{urllib.parse.urlencode(params)}")
 
-# -------------------- CALLBACK --------------------
 
 @app.route("/callback")
 def callback():
@@ -64,8 +60,6 @@ def callback():
 
     return redirect("/playlists")
 
-# -------------------- PLAYLISTS --------------------
-
 @app.route("/playlists")
 def get_playlists():
     if "access_token" not in session:
@@ -73,21 +67,50 @@ def get_playlists():
 
     headers = {"Authorization": f"Bearer {session['access_token']}"}
     response = requests.get(api_base_url + "me/playlists?limit=50", headers=headers)
-
     data = response.json()
     playlists = data.get("items", [])
 
-    # Sort full playlist objects by tracks.total
-    top_5_playlists = sorted(
-        playlists,
-        key=lambda p: p["tracks"]["total"],
-        reverse=True
-    )[:5]
+    specific_name = "60 bpm" #SPECIFY PLAYLIST NAME HERE
 
-    # Return full playlist objects (unchanged)
-    return jsonify(top_5_playlists)
+    playlist = next((p for p in playlists if p["name"] == specific_name), None)
 
-# -------------------- REFRESH TOKEN --------------------
+    if not playlist:
+        return jsonify({"error": f"Playlist '{specific_name}' not found"})
+
+    playlist_id = playlist["id"]
+    playlist_name = playlist["name"]
+
+    # Get all tracks for this playlist (handle pagination)
+    tracks = []
+    url = f"{api_base_url}playlists/{playlist_id}/tracks?limit=100"
+    while url:
+        track_response = requests.get(url, headers=headers).json()
+        for item in track_response.get("items", []):
+            track_info = item["track"]
+            track_name = track_info["name"]
+            artists = [artist["name"] for artist in track_info["artists"]]
+
+            # Get artist genres (take first artist as main)
+            artist_id = track_info["artists"][0]["id"]
+            artist_data = requests.get(f"{api_base_url}artists/{artist_id}", headers=headers).json()
+            genres = artist_data.get("genres", [])
+
+            tracks.append({
+                "track_name": track_name,
+                "artists": artists,
+                "genres": genres
+            })
+
+        url = track_response.get("next")  # Spotify pagination
+
+    result = {
+        "playlist_name": playlist_name,
+        "num_tracks": len(tracks),
+        "tracks": tracks
+    }
+
+    return jsonify(result)
+
 
 @app.route("/refresh-token")
 def refresh_token():
