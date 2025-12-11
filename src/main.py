@@ -2,7 +2,7 @@ import json
 from analyzer import normalize_tracks, analyze_genres, top_n_genres
 from storyteller import build_acts
 
-INPUT_PATH = "../data/60bpm test data.json" #SPECIFY INPUT FILE PATH HERE
+INPUT_PATH = "../data/pretest data.json" #SPECIFY INPUT FILE PATH HERE
 OUTPUT_PATH = "../output/playlist_story.json" #SPECIFY OUTPUT FOLDER AND FILE NAME HERE (Pick anything that hasn't been used yet)
 
 def main():
