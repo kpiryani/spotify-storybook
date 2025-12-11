@@ -1,0 +1,1281 @@
+{
+  "playlist_name": "60 bpm",
+  "num_tracks": 597,
+  "acts": {
+    "Act I": {
+      "title": "The Awakening",
+      "dominant_genre": "rap",
+      "description": "The energy sharpens. Focus locks in. Every beat feels deliberate.",
+      "track_count": 83,
+      "tracks": [
+        {
+          "track_name": "January 28th",
+          "artists": [
+            "J. Cole"
+          ]
+        },
+        {
+          "track_name": "What About Me (feat. Post Malone)",
+          "artists": [
+            "Lil Wayne",
+            "Post Malone"
+          ]
+        },
+        {
+          "track_name": "Oh My Dis Side (feat. Quavo)",
+          "artists": [
+            "Travis Scott",
+            "Quavo"
+          ]
+        },
+        {
+          "track_name": "Apparently",
+          "artists": [
+            "J. Cole"
+          ]
+        },
+        {
+          "track_name": "St. Tropez",
+          "artists": [
+            "J. Cole"
+          ]
+        },
+        {
+          "track_name": "Time Flies",
+          "artists": [
+            "Drake"
+          ]
+        },
+        {
+          "track_name": "Flight's Booked",
+          "artists": [
+            "Drake"
+          ]
+        },
+        {
+          "track_name": "Scared of the Dark (feat. XXXTENTACION)",
+          "artists": [
+            "Lil Wayne",
+            "Ty Dolla $ign",
+            "XXXTENTACION"
+          ]
+        },
+        {
+          "track_name": "Wet Dreamz",
+          "artists": [
+            "J. Cole"
+          ]
+        },
+        {
+          "track_name": "Change",
+          "artists": [
+            "J. Cole"
+          ]
+        },
+        {
+          "track_name": "a p p l y i n g . p r e s s u r e",
+          "artists": [
+            "J. Cole"
+          ]
+        },
+        {
+          "track_name": "t h e . c l i m b . b a c k",
+          "artists": [
+            "J. Cole"
+          ]
+        },
+        {
+          "track_name": "A Keeper",
+          "artists": [
+            "Drake"
+          ]
+        },
+        {
+          "track_name": "Remote Control",
+          "artists": [
+            "Kanye West"
+          ]
+        },
+        {
+          "track_name": "MONEY ON ME",
+          "artists": [
+            "Lil Tecca"
+          ]
+        },
+        {
+          "track_name": "Nightcrawler (feat. Swae Lee & Chief Keef)",
+          "artists": [
+            "Travis Scott",
+            "Swae Lee",
+            "Chief Keef"
+          ]
+        },
+        {
+          "track_name": "COFFEE BEAN",
+          "artists": [
+            "Travis Scott"
+          ]
+        },
+        {
+          "track_name": "Solo",
+          "artists": [
+            "Future"
+          ]
+        },
+        {
+          "track_name": "Come to Life",
+          "artists": [
+            "Kanye West"
+          ]
+        },
+        {
+          "track_name": "Believe What I Say",
+          "artists": [
+            "Kanye West"
+          ]
+        },
+        {
+          "track_name": "beibs in the trap",
+          "artists": [
+            "Travis Scott"
+          ]
+        },
+        {
+          "track_name": "Forbidden Fruit (feat. Kendrick Lamar)",
+          "artists": [
+            "J. Cole",
+            "Kendrick Lamar"
+          ]
+        },
+        {
+          "track_name": "True Love",
+          "artists": [
+            "Kanye West",
+            "XXXTENTACION"
+          ]
+        },
+        {
+          "track_name": "Where I Came From",
+          "artists": [
+            "Future"
+          ]
+        },
+        {
+          "track_name": "No Shame (Future feat. PARTYNEXTDOOR)",
+          "artists": [
+            "Future",
+            "PARTYNEXTDOOR"
+          ]
+        },
+        {
+          "track_name": "Pain 1993 (with Playboi Carti)",
+          "artists": [
+            "Drake",
+            "Playboi Carti"
+          ]
+        },
+        {
+          "track_name": "Not You Too (feat. Chris Brown)",
+          "artists": [
+            "Drake",
+            "Chris Brown"
+          ]
+        },
+        {
+          "track_name": "l e t . g o . m y . h a n d (with Bas & 6LACK)",
+          "artists": [
+            "J. Cole",
+            "Bas",
+            "6LACK"
+          ]
+        },
+        {
+          "track_name": "K-POP",
+          "artists": [
+            "Travis Scott",
+            "Bad Bunny",
+            "The Weeknd"
+          ]
+        },
+        {
+          "track_name": "Feel No Ways",
+          "artists": [
+            "Drake"
+          ]
+        },
+        {
+          "track_name": "No Role Modelz",
+          "artists": [
+            "J. Cole"
+          ]
+        },
+        {
+          "track_name": "MODERN JAM (feat. Teezo Touchdown)",
+          "artists": [
+            "Travis Scott",
+            "Teezo Touchdown"
+          ]
+        },
+        {
+          "track_name": "MY EYES",
+          "artists": [
+            "Travis Scott"
+          ]
+        },
+        {
+          "track_name": "PARASAIL (feat. Yung Lean & Dave Chappelle)",
+          "artists": [
+            "Travis Scott",
+            "Yung Lean",
+            "Dave Chappelle"
+          ]
+        },
+        {
+          "track_name": "TELEKINESIS (feat. SZA & Future)",
+          "artists": [
+            "Travis Scott",
+            "SZA",
+            "Future"
+          ]
+        },
+        {
+          "track_name": "TIL FURTHER NOTICE (feat. James Blake & 21 Savage)",
+          "artists": [
+            "Travis Scott",
+            "James Blake",
+            "21 Savage"
+          ]
+        },
+        {
+          "track_name": "Lemon Pepper Freestyle (feat. Rick Ross)",
+          "artists": [
+            "Drake",
+            "Rick Ross"
+          ]
+        },
+        {
+          "track_name": "Afterlife",
+          "artists": [
+            "Future"
+          ]
+        },
+        {
+          "track_name": "After Dark (feat. Static Major & Ty Dolla $ign)",
+          "artists": [
+            "Drake",
+            "Static Major",
+            "Ty Dolla $ign"
+          ]
+        },
+        {
+          "track_name": "Slime You Out (feat. SZA)",
+          "artists": [
+            "Drake",
+            "SZA"
+          ]
+        },
+        {
+          "track_name": "Wyclef Jean",
+          "artists": [
+            "Young Thug"
+          ]
+        },
+        {
+          "track_name": "Gorgeous",
+          "artists": [
+            "Kanye West",
+            "Kid Cudi",
+            "Raekwon"
+          ]
+        },
+        {
+          "track_name": "Virginia Beach",
+          "artists": [
+            "Drake"
+          ]
+        },
+        {
+          "track_name": "Amen (feat. Teezo Touchdown)",
+          "artists": [
+            "Drake",
+            "Teezo Touchdown"
+          ]
+        },
+        {
+          "track_name": "7969 Santa",
+          "artists": [
+            "Drake"
+          ]
+        },
+        {
+          "track_name": "Bahamas Promises",
+          "artists": [
+            "Drake"
+          ]
+        },
+        {
+          "track_name": "Tried Our Best",
+          "artists": [
+            "Drake"
+          ]
+        },
+        {
+          "track_name": "Drew A Picasso",
+          "artists": [
+            "Drake"
+          ]
+        },
+        {
+          "track_name": "8am in Charlotte",
+          "artists": [
+            "Drake"
+          ]
+        },
+        {
+          "track_name": "Away From Home",
+          "artists": [
+            "Drake"
+          ]
+        },
+        {
+          "track_name": "Polar Opposites",
+          "artists": [
+            "Drake"
+          ]
+        },
+        {
+          "track_name": "I'm Upset",
+          "artists": [
+            "Drake"
+          ]
+        },
+        {
+          "track_name": "Is There More",
+          "artists": [
+            "Drake"
+          ]
+        },
+        {
+          "track_name": "Peak",
+          "artists": [
+            "Drake"
+          ]
+        },
+        {
+          "track_name": "Foldin Clothes",
+          "artists": [
+            "J. Cole"
+          ]
+        },
+        {
+          "track_name": "4 Your Eyez Only",
+          "artists": [
+            "J. Cole"
+          ]
+        },
+        {
+          "track_name": "The Ride",
+          "artists": [
+            "Drake"
+          ]
+        },
+        {
+          "track_name": "Weston Road Flows",
+          "artists": [
+            "Drake"
+          ]
+        },
+        {
+          "track_name": "Childs Play",
+          "artists": [
+            "Drake"
+          ]
+        },
+        {
+          "track_name": "way back",
+          "artists": [
+            "Travis Scott"
+          ]
+        },
+        {
+          "track_name": "first take",
+          "artists": [
+            "Travis Scott"
+          ]
+        },
+        {
+          "track_name": "All The Parties (feat. Chief Keef)",
+          "artists": [
+            "Drake",
+            "Chief Keef"
+          ]
+        },
+        {
+          "track_name": "IMY2 (with Kid Cudi)",
+          "artists": [
+            "Drake",
+            "Kid Cudi"
+          ]
+        },
+        {
+          "track_name": "Company",
+          "artists": [
+            "Drake",
+            "Travis Scott"
+          ]
+        },
+        {
+          "track_name": "Jungle",
+          "artists": [
+            "Drake"
+          ]
+        },
+        {
+          "track_name": "Star67",
+          "artists": [
+            "Drake"
+          ]
+        },
+        {
+          "track_name": "6PM In New York",
+          "artists": [
+            "Drake"
+          ]
+        },
+        {
+          "track_name": "Drugs You Should Try It",
+          "artists": [
+            "Travis Scott"
+          ]
+        },
+        {
+          "track_name": "Grey",
+          "artists": [
+            "Travis Scott"
+          ]
+        },
+        {
+          "track_name": "Livin It Up (with Post Malone & A$AP Rocky)",
+          "artists": [
+            "Young Thug",
+            "A$AP Rocky",
+            "Post Malone"
+          ]
+        },
+        {
+          "track_name": "Deep Pockets",
+          "artists": [
+            "Drake"
+          ]
+        },
+        {
+          "track_name": "Wednesday Night Interlude",
+          "artists": [
+            "Drake",
+            "PARTYNEXTDOOR"
+          ]
+        },
+        {
+          "track_name": "Knife Talk (with 21 Savage ft. Project Pat)",
+          "artists": [
+            "Drake",
+            "21 Savage",
+            "Project Pat"
+          ]
+        },
+        {
+          "track_name": "Crew Love",
+          "artists": [
+            "Drake",
+            "The Weeknd"
+          ]
+        },
+        {
+          "track_name": "Home Soon",
+          "artists": [
+            "J. Cole"
+          ]
+        },
+        {
+          "track_name": "Die Together",
+          "artists": [
+            "J. Cole"
+          ]
+        },
+        {
+          "track_name": "Finesse",
+          "artists": [
+            "Drake"
+          ]
+        },
+        {
+          "track_name": "Over My Dead Body",
+          "artists": [
+            "Drake"
+          ]
+        },
+        {
+          "track_name": "Marvins Room",
+          "artists": [
+            "Drake"
+          ]
+        },
+        {
+          "track_name": "Get It Together",
+          "artists": [
+            "Drake",
+            "Black Coffee",
+            "Jorja Smith"
+          ]
+        },
+        {
+          "track_name": "Nothings Into Somethings",
+          "artists": [
+            "Drake"
+          ]
+        },
+        {
+          "track_name": "Yebba\u2019s Heartbreak",
+          "artists": [
+            "Drake",
+            "Yebba"
+          ]
+        },
+        {
+          "track_name": "Jaded",
+          "artists": [
+            "Drake"
+          ]
+        }
+      ]
+    },
+    "Act II": {
+      "title": "Gathering Momentum",
+      "dominant_genre": "melodic rap",
+      "description": "Emotion seeps through the cracks. Reflection without losing pace.",
+      "track_count": 26,
+      "tracks": [
+        {
+          "track_name": "Reset (with Bryson Tiller)",
+          "artists": [
+            "NAV",
+            "Bryson Tiller"
+          ]
+        },
+        {
+          "track_name": "Forever Never (feat. Swae Lee & Pink Sweat$)",
+          "artists": [
+            "PnB Rock",
+            "Swae Lee",
+            "Pink Sweat$"
+          ]
+        },
+        {
+          "track_name": "Girl Of My Dreams (with SUGA of BTS)",
+          "artists": [
+            "Juice WRLD",
+            "SUGA",
+            "BTS"
+          ]
+        },
+        {
+          "track_name": "Demons and Angels (feat. Juice WRLD)",
+          "artists": [
+            "A Boogie Wit da Hoodie",
+            "Juice WRLD"
+          ]
+        },
+        {
+          "track_name": "Desire",
+          "artists": [
+            "Juice WRLD"
+          ]
+        },
+        {
+          "track_name": "Fast",
+          "artists": [
+            "Juice WRLD"
+          ]
+        },
+        {
+          "track_name": "Hear Me Calling",
+          "artists": [
+            "Juice WRLD"
+          ]
+        },
+        {
+          "track_name": "Empty",
+          "artists": [
+            "Juice WRLD"
+          ]
+        },
+        {
+          "track_name": "Hide (feat. Seezyn)",
+          "artists": [
+            "Juice WRLD",
+            "Seezyn"
+          ]
+        },
+        {
+          "track_name": "Suicidal (feat. Juice WRLD) - Remix",
+          "artists": [
+            "YNW Melly",
+            "Juice WRLD"
+          ]
+        },
+        {
+          "track_name": "Give You What You Want",
+          "artists": [
+            "Lil Tjay"
+          ]
+        },
+        {
+          "track_name": "Patience (feat. Don Toliver)",
+          "artists": [
+            "Lil Uzi Vert",
+            "Don Toliver"
+          ]
+        },
+        {
+          "track_name": "Wasted (feat. Lil Uzi Vert)",
+          "artists": [
+            "Juice WRLD",
+            "Lil Uzi Vert"
+          ]
+        },
+        {
+          "track_name": "HeMotions",
+          "artists": [
+            "Juice WRLD"
+          ]
+        },
+        {
+          "track_name": "Fast",
+          "artists": [
+            "Juice WRLD"
+          ]
+        },
+        {
+          "track_name": "I Want It",
+          "artists": [
+            "Juice WRLD"
+          ]
+        },
+        {
+          "track_name": "Reminds Me Of You",
+          "artists": [
+            "Juice WRLD",
+            "The Kid LAROI"
+          ]
+        },
+        {
+          "track_name": "10 Feet",
+          "artists": [
+            "Juice WRLD"
+          ]
+        },
+        {
+          "track_name": "The Bees Knees",
+          "artists": [
+            "Juice WRLD"
+          ]
+        },
+        {
+          "track_name": "Red Moon",
+          "artists": [
+            "Lil Uzi Vert"
+          ]
+        },
+        {
+          "track_name": "Get to You",
+          "artists": [
+            "A Boogie Wit da Hoodie"
+          ]
+        },
+        {
+          "track_name": "P&E (feat. Mariah the Scientist)",
+          "artists": [
+            "A Boogie Wit da Hoodie",
+            "Mariah the Scientist"
+          ]
+        },
+        {
+          "track_name": "Neon Guts (feat. Pharrell Williams)",
+          "artists": [
+            "Lil Uzi Vert",
+            "Pharrell Williams"
+          ]
+        },
+        {
+          "track_name": "OUT OF MY BODY",
+          "artists": [
+            "DC The Don",
+            "6LACK"
+          ]
+        },
+        {
+          "track_name": "Condone It",
+          "artists": [
+            "Juice WRLD"
+          ]
+        },
+        {
+          "track_name": "Wandered To LA (with Justin Bieber)",
+          "artists": [
+            "Juice WRLD",
+            "Justin Bieber"
+          ]
+        }
+      ]
+    },
+    "Act III": {
+      "title": "Full Speed Ahead",
+      "dominant_genre": "r&b",
+      "description": "Late nights, soft lights, and unspoken thoughts linger.",
+      "track_count": 83,
+      "tracks": [
+        {
+          "track_name": "Still Your Best",
+          "artists": [
+            "GIV\u0112ON"
+          ]
+        },
+        {
+          "track_name": "Lie Again",
+          "artists": [
+            "GIV\u0112ON"
+          ]
+        },
+        {
+          "track_name": "Exchange",
+          "artists": [
+            "Bryson Tiller"
+          ]
+        },
+        {
+          "track_name": "Right My Wrongs",
+          "artists": [
+            "Bryson Tiller"
+          ]
+        },
+        {
+          "track_name": "Fields",
+          "artists": [
+            "GIV\u0112ON"
+          ]
+        },
+        {
+          "track_name": "This Will Do",
+          "artists": [
+            "GIV\u0112ON"
+          ]
+        },
+        {
+          "track_name": "No Guidance (feat. Drake)",
+          "artists": [
+            "Chris Brown",
+            "Drake"
+          ]
+        },
+        {
+          "track_name": "Girl Of My Dreams",
+          "artists": [
+            "Chris Brown"
+          ]
+        },
+        {
+          "track_name": "Natural Disaster / Aura",
+          "artists": [
+            "Chris Brown"
+          ]
+        },
+        {
+          "track_name": "LALA (Unlocked) (feat. Swae Lee)",
+          "artists": [
+            "Alicia Keys",
+            "Swae Lee"
+          ]
+        },
+        {
+          "track_name": "Love Galore (feat. Travis Scott)",
+          "artists": [
+            "SZA",
+            "Travis Scott"
+          ]
+        },
+        {
+          "track_name": "Sky Walker (feat. Travis Scott)",
+          "artists": [
+            "Miguel",
+            "Travis Scott"
+          ]
+        },
+        {
+          "track_name": "Favorite Mistake",
+          "artists": [
+            "GIV\u0112ON"
+          ]
+        },
+        {
+          "track_name": "Used (feat. Don Toliver)",
+          "artists": [
+            "SZA",
+            "Don Toliver"
+          ]
+        },
+        {
+          "track_name": "Open Arms (feat. Travis Scott)",
+          "artists": [
+            "SZA",
+            "Travis Scott"
+          ]
+        },
+        {
+          "track_name": "Call Me Every Day (feat. Wizkid)",
+          "artists": [
+            "Chris Brown",
+            "Wizkid"
+          ]
+        },
+        {
+          "track_name": "Under The Influence",
+          "artists": [
+            "Chris Brown"
+          ]
+        },
+        {
+          "track_name": "It's Giving Christmas",
+          "artists": [
+            "Chris Brown"
+          ]
+        },
+        {
+          "track_name": "No Time Like Christmas",
+          "artists": [
+            "Chris Brown"
+          ]
+        },
+        {
+          "track_name": "Good Days",
+          "artists": [
+            "SZA"
+          ]
+        },
+        {
+          "track_name": "World We Created",
+          "artists": [
+            "GIV\u0112ON"
+          ]
+        },
+        {
+          "track_name": "Let Me Go",
+          "artists": [
+            "GIV\u0112ON"
+          ]
+        },
+        {
+          "track_name": "Make You Mine",
+          "artists": [
+            "GIV\u0112ON"
+          ]
+        },
+        {
+          "track_name": "Tell Me It's Over (feat. Summer Walker & 6LACK)",
+          "artists": [
+            "Jacquees",
+            "Summer Walker",
+            "6LACK"
+          ]
+        },
+        {
+          "track_name": "Undecided",
+          "artists": [
+            "Chris Brown"
+          ]
+        },
+        {
+          "track_name": "BP / No Judgement",
+          "artists": [
+            "Chris Brown"
+          ]
+        },
+        {
+          "track_name": "Tell Me How You Feel (feat. Tory Lanez)",
+          "artists": [
+            "Chris Brown",
+            "Tory Lanez"
+          ]
+        },
+        {
+          "track_name": "Nose Dive (feat. DaniLeigh)",
+          "artists": [
+            "Chris Brown",
+            "DaniLeigh"
+          ]
+        },
+        {
+          "track_name": "Like It (with 6LACK)",
+          "artists": [
+            "Summer Walker",
+            "6LACK"
+          ]
+        },
+        {
+          "track_name": "The Moon (feat. Neil deGrasse Tyson)",
+          "artists": [
+            "Musiq Soulchild",
+            "Neil deGrasse Tyson"
+          ]
+        },
+        {
+          "track_name": "GHETTO GATSBY (FEAT. ALICIA KEYS)",
+          "artists": [
+            "Brent Faiyaz",
+            "Alicia Keys"
+          ]
+        },
+        {
+          "track_name": "Rehab (Winter In Paris)",
+          "artists": [
+            "Brent Faiyaz"
+          ]
+        },
+        {
+          "track_name": "Been Away",
+          "artists": [
+            "Brent Faiyaz"
+          ]
+        },
+        {
+          "track_name": "Low",
+          "artists": [
+            "SZA"
+          ]
+        },
+        {
+          "track_name": "7:00",
+          "artists": [
+            "Bryson Tiller"
+          ]
+        },
+        {
+          "track_name": "Snooze",
+          "artists": [
+            "SZA"
+          ]
+        },
+        {
+          "track_name": "ROLLING STONE",
+          "artists": [
+            "Brent Faiyaz"
+          ]
+        },
+        {
+          "track_name": "WASTING TIME (FEAT. DRAKE & THE NEPTUNES)",
+          "artists": [
+            "Brent Faiyaz",
+            "Drake",
+            "The Neptunes"
+          ]
+        },
+        {
+          "track_name": "GRAVITY (FEAT. TYLER, THE CREATOR)",
+          "artists": [
+            "Brent Faiyaz",
+            "Dahi",
+            "Tyler, The Creator"
+          ]
+        },
+        {
+          "track_name": "JUS KNOW (feat. Travis Scott)",
+          "artists": [
+            "PARTYNEXTDOOR",
+            "Travis Scott"
+          ]
+        },
+        {
+          "track_name": "Joy",
+          "artists": [
+            "PARTYNEXTDOOR"
+          ]
+        },
+        {
+          "track_name": "Don't",
+          "artists": [
+            "Bryson Tiller"
+          ]
+        },
+        {
+          "track_name": "winter wonderland (feat. Halo)",
+          "artists": [
+            "Bryson Tiller",
+            "Halo"
+          ]
+        },
+        {
+          "track_name": "Open Interlude",
+          "artists": [
+            "Bryson Tiller"
+          ]
+        },
+        {
+          "track_name": "Self Righteous",
+          "artists": [
+            "Bryson Tiller"
+          ]
+        },
+        {
+          "track_name": "Blame",
+          "artists": [
+            "Bryson Tiller"
+          ]
+        },
+        {
+          "track_name": "Sensational (feat. Davido & Lojay)",
+          "artists": [
+            "Chris Brown",
+            "Davido",
+            "Lojay"
+          ]
+        },
+        {
+          "track_name": "Love Language",
+          "artists": [
+            "SZA"
+          ]
+        },
+        {
+          "track_name": "Don't Get Too High",
+          "artists": [
+            "Bryson Tiller"
+          ]
+        },
+        {
+          "track_name": "Angel Numbers / Ten Toes",
+          "artists": [
+            "Chris Brown"
+          ]
+        },
+        {
+          "track_name": "Lower Body (feat. Davido)",
+          "artists": [
+            "Chris Brown",
+            "Davido"
+          ]
+        },
+        {
+          "track_name": "That's On You (feat. Future)",
+          "artists": [
+            "Chris Brown",
+            "Future"
+          ]
+        },
+        {
+          "track_name": "Very Special",
+          "artists": [
+            "Chris Brown"
+          ]
+        },
+        {
+          "track_name": "Don't Check On Me (feat. Justin Bieber & Ink)",
+          "artists": [
+            "Chris Brown",
+            "Justin Bieber",
+            "Ink"
+          ]
+        },
+        {
+          "track_name": "Pretty Little Birds (feat. Isaiah Rashad)",
+          "artists": [
+            "SZA",
+            "Isaiah Rashad"
+          ]
+        },
+        {
+          "track_name": "Happiness Over Everything (H.O.E.) (feat. Future & Miguel)",
+          "artists": [
+            "Jhen\u00e9 Aiko",
+            "Future",
+            "Miguel"
+          ]
+        },
+        {
+          "track_name": "Sativa",
+          "artists": [
+            "Jhen\u00e9 Aiko",
+            "Swae Lee"
+          ]
+        },
+        {
+          "track_name": "The Weekend",
+          "artists": [
+            "SZA"
+          ]
+        },
+        {
+          "track_name": "Go Gina",
+          "artists": [
+            "SZA"
+          ]
+        },
+        {
+          "track_name": "Slide (Remix) (feat. Pop Smoke, A Boogie Wit da Hoodie & Chris Brown) (feat. Pop Smoke)",
+          "artists": [
+            "H.E.R.",
+            "A Boogie Wit da Hoodie",
+            "Chris Brown",
+            "Pop Smoke"
+          ]
+        },
+        {
+          "track_name": "Running on E",
+          "artists": [
+            "Brent Faiyaz"
+          ]
+        },
+        {
+          "track_name": "Could've Been (feat. Bryson Tiller)",
+          "artists": [
+            "H.E.R.",
+            "Bryson Tiller"
+          ]
+        },
+        {
+          "track_name": "Come Together (feat. H.E.R.)",
+          "artists": [
+            "Chris Brown",
+            "H.E.R."
+          ]
+        },
+        {
+          "track_name": "RENDEZVOUS",
+          "artists": [
+            "PARTYNEXTDOOR"
+          ]
+        },
+        {
+          "track_name": "GIRL FROM OAKLAND",
+          "artists": [
+            "PARTYNEXTDOOR"
+          ]
+        },
+        {
+          "track_name": "Hit Different",
+          "artists": [
+            "SZA",
+            "The Neptunes",
+            "Pharrell Williams",
+            "Ty Dolla $ign"
+          ]
+        },
+        {
+          "track_name": "No More Hiding",
+          "artists": [
+            "SZA"
+          ]
+        },
+        {
+          "track_name": "My Turn",
+          "artists": [
+            "SZA"
+          ]
+        },
+        {
+          "track_name": "Kill Bill",
+          "artists": [
+            "SZA"
+          ]
+        },
+        {
+          "track_name": "Notice Me",
+          "artists": [
+            "SZA"
+          ]
+        },
+        {
+          "track_name": "Wait For It",
+          "artists": [
+            "H.E.R."
+          ]
+        },
+        {
+          "track_name": "Trauma (feat. Cordae)",
+          "artists": [
+            "H.E.R.",
+            "Cordae",
+            "Hit-Boy"
+          ]
+        },
+        {
+          "track_name": "For Anyone",
+          "artists": [
+            "H.E.R."
+          ]
+        },
+        {
+          "track_name": "Sorry Not Sorry",
+          "artists": [
+            "Bryson Tiller"
+          ]
+        },
+        {
+          "track_name": "Forever",
+          "artists": [
+            "Chris Brown"
+          ]
+        },
+        {
+          "track_name": "DIE TRYING",
+          "artists": [
+            "PARTYNEXTDOOR",
+            "Drake",
+            "Yebba"
+          ]
+        },
+        {
+          "track_name": "The Beach",
+          "artists": [
+            "GIV\u0112ON"
+          ]
+        },
+        {
+          "track_name": "Let S**t Go",
+          "artists": [
+            "Chris Brown"
+          ]
+        },
+        {
+          "track_name": "Lost & Found",
+          "artists": [
+            "Chris Brown"
+          ]
+        },
+        {
+          "track_name": "Who's Gonna (NOBODY)",
+          "artists": [
+            "Chris Brown"
+          ]
+        },
+        {
+          "track_name": "Joni (feat. Don Toliver)",
+          "artists": [
+            "SZA",
+            "Don Toliver"
+          ]
+        },
+        {
+          "track_name": "This Ain't Love",
+          "artists": [
+            "GIV\u0112ON"
+          ]
+        },
+        {
+          "track_name": "Vanish",
+          "artists": [
+            "GIV\u0112ON"
+          ]
+        }
+      ]
+    }
+  }
+}
