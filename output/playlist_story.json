@@ -1,46 +1,96 @@
 {
-  "playlist_name": "head bops",
-  "num_tracks": 14,
+  "playlist_name": "night lights",
+  "num_tracks": 36,
   "acts": {
     "Act I": {
       "title": "The Awakening",
-      "dominant_genre": "edm",
-      "description": "Lights flare. Motion takes over. Time dissolves.",
-      "track_count": 1,
+      "dominant_genre": "rap",
+      "description": "The energy sharpens. Focus locks in. Every beat feels deliberate.",
+      "track_count": 3,
       "tracks": [
         {
-          "track_name": "Prayers Up (feat. Travis Scott & A-Trak)",
+          "track_name": "Low Life (feat. The Weeknd)",
           "artists": [
-            "Calvin Harris",
-            "Travis Scott",
-            "A-Trak",
-            "Funk Wav"
+            "Future",
+            "The Weeknd"
+          ]
+        },
+        {
+          "track_name": "Not You Too (feat. Chris Brown)",
+          "artists": [
+            "Drake",
+            "Chris Brown"
+          ]
+        },
+        {
+          "track_name": "Jaded",
+          "artists": [
+            "Drake"
           ]
         }
       ]
     },
     "Act II": {
       "title": "Gathering Momentum",
-      "dominant_genre": "afrobeats",
-      "description": "Release arrives. Movement replaces restraint.",
-      "track_count": 2,
+      "dominant_genre": "r&b",
+      "description": "Late nights, soft lights, and unspoken thoughts linger.",
+      "track_count": 5,
       "tracks": [
         {
-          "track_name": "Only You",
+          "track_name": "JUS KNOW (feat. Travis Scott)",
           "artists": [
-            "STANY",
-            "Rema",
-            "Offset"
+            "PARTYNEXTDOOR",
+            "Travis Scott"
           ]
         },
         {
-          "track_name": "4AM",
+          "track_name": "ANOTHER DAY",
           "artists": [
-            "Manny Nort\u00e9",
-            "6LACK",
-            "Rema",
-            "Tion Wayne",
-            "Love Renaissance (LVRN)"
+            "PARTYNEXTDOOR"
+          ]
+        },
+        {
+          "track_name": "Sky Walker (feat. Travis Scott)",
+          "artists": [
+            "Miguel",
+            "Travis Scott"
+          ]
+        },
+        {
+          "track_name": "GREEDY",
+          "artists": [
+            "PARTYNEXTDOOR",
+            "Drake"
+          ]
+        },
+        {
+          "track_name": "It Depends (feat. Bryson Tiller)",
+          "artists": [
+            "Chris Brown",
+            "Bryson Tiller"
+          ]
+        }
+      ]
+    },
+    "Act III": {
+      "title": "Full Speed Ahead",
+      "dominant_genre": "edm",
+      "description": "Lights flare. Motion takes over. Time dissolves.",
+      "track_count": 2,
+      "tracks": [
+        {
+          "track_name": "Lifetime (with Ty Dolla $ign & 070 Shake)",
+          "artists": [
+            "Swedish House Mafia",
+            "Ty Dolla $ign",
+            "070 Shake"
+          ]
+        },
+        {
+          "track_name": "Over Now (with The Weeknd)",
+          "artists": [
+            "Calvin Harris",
+            "The Weeknd"
           ]
         }
       ]
