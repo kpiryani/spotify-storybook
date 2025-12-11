@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #0f0f0f;
+  color: #eaeaea;
+}
+
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  color: #aaa;
+  margin-bottom: 30px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.act-card {
+  background: #181818;
+  border-radius: 12px;
+  padding: 20px;
+  border-left: 4px solid #1db954;
+}
+
+.act-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.genre {
+  font-size: 0.9rem;
+  background: #1db954;
+  color: black;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.description {
+  color: #ccc;
+  margin: 10px 0;
+}
+
+.track-count {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.track-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.track-list li {
+  padding: 6px 0;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.track-list li:last-child {
+  border-bottom: none;
+}
+
+.artists {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.upload-container {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.file-upload {
+  margin: 40px 0;
+}
+
+.upload-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 32px;
+  background: #1db954;
+  color: black;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background 0.2s;
+}
+
+.upload-label:hover {
+  background: #1ed760;
+}
+
+.upload-label svg {
+  width: 24px;
+  height: 24px;
+}
+
+.upload-hint {
+  margin-top: 16px;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.all-tracks {
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 2px solid #2a2a2a;
+}
+
+.all-tracks h2 {
+  margin-bottom: 24px;
+  font-size: 1.5rem;
+}
+
+.tracks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 12px;
+}
+
+.track-item {
+  padding: 12px;
+  background: #181818;
+  border-radius: 8px;
+  border-left: 3px solid #1db954;
+}
+
+.track-item strong {
+  display: block;
+  margin-bottom: 4px;
+}
