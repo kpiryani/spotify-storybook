@@ -5,7 +5,11 @@ GENRE_PRIORITY = [
     "hip hop",
     "afrobeats",
     "edm",
-    "pop"
+    "pop",
+    "trap soul",
+    "emo rap",
+    "country",
+    "electronic"
 ]
 
 GENRE_STORY_MAP = { #AI placeholders for now

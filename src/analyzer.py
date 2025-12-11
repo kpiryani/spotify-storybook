@@ -1,4 +1,5 @@
 from collections import defaultdict
+from constants import GENRE_PRIORITY
 
 GENRE_PRIORITY = [
     "rap", "hip hop", "melodic rap", "edm", "r&b",
