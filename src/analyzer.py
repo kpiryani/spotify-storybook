@@ -14,22 +14,23 @@ def choose_primary_genre(genres):
     return None  # unknown genres should be skipped
 
 def normalize_tracks(tracks):
-    """Add primary genre and track position; skip tracks with unknown genre."""
-    normalized = [] 
+    total_tracks = len(tracks) - 1
+    normalized = []
 
     for idx, track in enumerate(tracks):
         primary_genre = choose_primary_genre(track.get("genres", []))
         if primary_genre is None:
-            continue  # skip tracks not in genre list
+            continue
 
         normalized.append({
             "track_name": track["track_name"],
             "artists": track["artists"],
             "genre": primary_genre,
-            "position": idx
+            "position": idx / total_tracks  # ✅ normalization
         })
 
     return normalized
+
 
 def analyze_genres(tracks):
     """Return genre counts and list of positions per genre."""
