@@ -135,9 +135,9 @@ export default function App() {
                 {playlistData.playlist_name}
               </h1>
   
-              <p className="subtitle">
-                {playlistData.num_tracks || playlistData.tracks.length} tracks · AI-generated narrative
-              </p>
+              {/* <p className="subtitle">
+                {playlistData.num_tracks || playlistData.tracks.length} tracks
+              </p> */}
   
               {acts && <Timeline acts={acts} />}
               <AllTracks tracks={playlistData.tracks} />
