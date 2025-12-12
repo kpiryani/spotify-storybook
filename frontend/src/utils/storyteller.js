@@ -9,6 +9,7 @@ const GENRE_STORY_MAP = {
 };
 
 
+
 const ACT_TITLES = {
   "Act I": "The Awakening",
   "Act II": "Gathering Momentum",
