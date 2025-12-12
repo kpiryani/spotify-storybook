@@ -9,6 +9,7 @@ import { buildActs } from "./utils/storyteller";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import LocomotiveScroll from "locomotive-scroll";
+import { TextPlugin } from "gsap/TextPlugin";
 import "./App.css";
 
 
@@ -17,6 +18,8 @@ export default function App() {
   const [acts, setActs] = useState(null);
 
   const scrollerRef = useRef(null);
+  const titleRef = useRef(null);
+
 
   // --- NEW: animate act boxes on scroll ---
   const animateActBoxes = () => {
@@ -46,7 +49,8 @@ export default function App() {
     if (!playlistData) return;
     if (scrollerRef.current) return;
 
-    gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger, TextPlugin);
+
 
     const scrollContainer = document.querySelector(".container");
     if (!scrollContainer) {
@@ -94,6 +98,30 @@ export default function App() {
     };
   }, [playlistData]);
 
+  useEffect(() => {
+    if (!titleRef.current) return;
+  
+    // Use default text if no playlist yet
+    const playlistName = playlistData?.playlist_name || "Spotify Playlist Story";
+  
+    const tl = gsap.timeline({ repeat: -1, repeatDelay: 0.5 });
+  
+    tl.to(titleRef.current, {
+      duration: playlistName.length * 0.15, // ~0.15s per character
+      text: playlistName,
+      ease: "none"
+    })
+    .to({}, { duration: 5 }) // hold for 5 seconds
+    .to(titleRef.current, {
+      duration: playlistName.length * 0.08,
+      text: "",
+      ease: "none"
+    })
+    .to({}, { duration: 0.5 }); // short pause before repeating
+  }, [playlistData]);
+  
+  
+
   const handleFileUpload = (jsonData) => {
     try {
       if (!jsonData.playlist_name || !jsonData.tracks || !Array.isArray(jsonData.tracks)) {
@@ -123,26 +151,12 @@ export default function App() {
     <div className="wrapper">        {/* <-- animated background */}
       <div className="container">    {/* <-- locomotive scroll area */}
         <div className="app">
-          {!playlistData ? (
-            <div className="upload-container">
-              <h1 className="title">Spotify Playlist Story</h1>
-              <p className="subtitle">Upload your playlist JSON to see its narrative</p>
-              <FileUpload onFileUpload={handleFileUpload} />
-            </div>
-          ) : (
-            <>
-              <h1 className="title" data-scroll data-scroll-speed="2">
-                {playlistData.playlist_name}
-              </h1>
-  
-              {/* <p className="subtitle">
-                {playlistData.num_tracks || playlistData.tracks.length} tracks
-              </p> */}
-  
-              {acts && <Timeline acts={acts} />}
-              <AllTracks tracks={playlistData.tracks} />
-            </>
-          )}
+        <div className="upload-container">
+        <h1 className="title" ref={titleRef}>Spotify Playlist Story</h1>
+        <p className="subtitle">Upload your playlist JSON to see its narrative</p>
+        <FileUpload onFileUpload={handleFileUpload} />
+      </div>
+
         </div>
       </div>
     </div>
