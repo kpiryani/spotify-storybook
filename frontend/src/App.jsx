@@ -1,4 +1,3 @@
-// src/App.jsx
 import { useState, useEffect, useRef } from "react";
 import Timeline from "./components/Timeline";
 import FileUpload from "./components/FileUpload";
@@ -9,17 +8,14 @@ import { buildActs } from "./utils/storyteller";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import LocomotiveScroll from "locomotive-scroll";
-import { TextPlugin } from "gsap/TextPlugin";
-import "./App.css";
 
+import "./App.css";
 
 export default function App() {
   const [playlistData, setPlaylistData] = useState(null);
   const [acts, setActs] = useState(null);
 
   const scrollerRef = useRef(null);
-  const titleRef = useRef(null);
-
 
   // --- NEW: animate act boxes on scroll ---
   const animateActBoxes = () => {
@@ -37,9 +33,9 @@ export default function App() {
           scrollTrigger: {
             trigger: box,
             scroller: ".container",
-            start: "top 90%",        // starts when bottom gets close
-            toggleActions: "play none none reverse"
-          }
+            start: "top 90%",
+            toggleActions: "play none none reverse",
+          },
         }
       );
     });
@@ -49,8 +45,7 @@ export default function App() {
     if (!playlistData) return;
     if (scrollerRef.current) return;
 
-    gsap.registerPlugin(ScrollTrigger, TextPlugin);
-
+    gsap.registerPlugin(ScrollTrigger);
 
     const scrollContainer = document.querySelector(".container");
     if (!scrollContainer) {
@@ -80,10 +75,10 @@ export default function App() {
           left: 0,
           top: 0,
           width: window.innerWidth,
-          height: window.innerHeight
+          height: window.innerHeight,
         };
       },
-      pinType: scrollContainer.style.transform ? "transform" : "fixed"
+      pinType: scrollContainer.style.transform ? "transform" : "fixed",
     });
 
     ScrollTrigger.addEventListener("refresh", () => scroller.update());
@@ -94,37 +89,17 @@ export default function App() {
         scrollerRef.current.destroy();
         scrollerRef.current = null;
       }
-      ScrollTrigger.getAll().forEach(t => t.kill());
+      ScrollTrigger.getAll().forEach((t) => t.kill());
     };
   }, [playlistData]);
 
-  useEffect(() => {
-    if (!titleRef.current) return;
-  
-    // Use default text if no playlist yet
-    const playlistName = playlistData?.playlist_name || "Spotify Playlist Story";
-  
-    const tl = gsap.timeline({ repeat: -1, repeatDelay: 0.5 });
-  
-    tl.to(titleRef.current, {
-      duration: playlistName.length * 0.15, // ~0.15s per character
-      text: playlistName,
-      ease: "none"
-    })
-    .to({}, { duration: 5 }) // hold for 5 seconds
-    .to(titleRef.current, {
-      duration: playlistName.length * 0.08,
-      text: "",
-      ease: "none"
-    })
-    .to({}, { duration: 0.5 }); // short pause before repeating
-  }, [playlistData]);
-  
-  
-
   const handleFileUpload = (jsonData) => {
     try {
-      if (!jsonData.playlist_name || !jsonData.tracks || !Array.isArray(jsonData.tracks)) {
+      if (
+        !jsonData.playlist_name ||
+        !jsonData.tracks ||
+        !Array.isArray(jsonData.tracks)
+      ) {
         alert("Invalid playlist JSON. Expected 'playlist_name' and 'tracks' array.");
         return;
       }
@@ -132,7 +107,11 @@ export default function App() {
       const normalizedTracks = normalizeTracks(jsonData.tracks);
       const { genreCounts, genrePositions } = analyzeGenres(normalizedTracks);
       const topGenres = topNGenres(genreCounts, 3);
-      const generatedActs = buildActs(normalizedTracks, topGenres, genrePositions);
+      const generatedActs = buildActs(
+        normalizedTracks,
+        topGenres,
+        genrePositions
+      );
 
       setPlaylistData(jsonData);
       setActs(generatedActs);
@@ -148,18 +127,35 @@ export default function App() {
   };
 
   return (
-    <div className="wrapper">        {/* <-- animated background */}
-      <div className="container">    {/* <-- locomotive scroll area */}
+    <div className="wrapper">
+      {/* <-- animated background */}
+      <div className="container">
+        {/* <-- locomotive scroll area */}
         <div className="app">
-        <div className="upload-container">
-        <h1 className="title" ref={titleRef}>Spotify Playlist Story</h1>
-        <p className="subtitle">Upload your playlist JSON to see its narrative</p>
-        <FileUpload onFileUpload={handleFileUpload} />
-      </div>
+          {!playlistData ? (
+            <div className="upload-container">
+              <h1 className="title">Spotify Playlist Story</h1>
+              <p className="subtitle">
+                Upload your playlist JSON to see its narrative
+              </p>
+              <FileUpload onFileUpload={handleFileUpload} />
+            </div>
+          ) : (
+            <>
+              <h1 className="title" data-scroll data-scroll-speed="2">
+                {playlistData.playlist_name}
+              </h1>
 
+              {/* <p className="subtitle">
+                {playlistData.num_tracks || playlistData.tracks.length} tracks
+              </p> */}
+
+              {acts && <Timeline acts={acts} />}
+              <AllTracks tracks={playlistData.tracks} />
+            </>
+          )}
         </div>
       </div>
     </div>
   );
-  
 }

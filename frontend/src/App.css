@@ -1,8 +1,5 @@
-
 @import "locomotive-scroll/dist/locomotive-scroll.css";
-
 @import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
-
 
 #root {
   max-width: 1280px;
@@ -11,19 +8,23 @@
   text-align: center;
 }
 
+/* Logo styles */
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+/* Spin animation */
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -47,7 +48,7 @@
   color: #888;
 }
 
-
+/* Background */
 body {
   background: #fff;
 }
@@ -60,16 +61,18 @@ body {
   background-repeat: repeat-y;
   background-position: center top;
   color: #eee;
+
   width: 100%;
   min-height: 100vh;
-  overflow: hidden; /* prevent background from leaking */
+
+  overflow: hidden;
   height: 100%;
+
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-
 }
 
 @keyframes scroll {
@@ -78,43 +81,16 @@ body {
   }
 }
 
-
 @media (prefers-reduced-motion) {
   .wrapper {
     animation: scroll 800s linear infinite;
   }
 }
 
+/* 🔥 Lobster title */
 .title {
   font-size: 2.5rem;
   font-family: "Lobster", cursive;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 0;
-  margin: 0 auto;
-  text-align: center;
-  display: inline-block;
-  animation: typeErase 10s steps(30, end) infinite; /* total cycle 10s */
-}
-
-/* Keyframes for typing + pause + erasing */
-@keyframes typeErase {
-  0%, 5% {
-    width: 0;        /* start typing after 5% of total time */
-  }
-  30% {
-    width: 100%;     /* fully typed at this point */
-  }
-  85%, 100% {
-    width: 0;        /* erase back to start by 100% */
-  }
-}
-
-
-
-@keyframes blink {
-  0%, 50%, 100% { border-color: #eee; }
-  25%, 75% { border-color: transparent; }
 }
 
 @media (min-width: 670px) {
@@ -123,10 +99,7 @@ body {
   }
 }
 
-
-
-
-
+/* Act box styling */
 .act-box {
   background: rgba(0, 0, 0, 0.45);
   backdrop-filter: blur(4px);
@@ -135,4 +108,3 @@ body {
   margin-bottom: 2rem;
   will-change: transform, opacity;
 }
-

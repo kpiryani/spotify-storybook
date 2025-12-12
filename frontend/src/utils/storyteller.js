@@ -1,12 +1,13 @@
 const GENRE_STORY_MAP = {
-  "rap": "The energy sharpens. Focus locks in. Every beat feels deliberate.",
-  "melodic rap": "Emotion seeps through the cracks. Reflection without losing pace.",
-  "r&b": "Late nights, soft lights, and unspoken thoughts linger.",
-  "hip hop": "Momentum builds. Confidence grows louder.",
-  "afrobeats": "Release arrives. Movement replaces restraint.",
-  "edm": "Lights flare. Motion takes over. Time dissolves.",
-  "pop": "Clarity, uplift, and a sense of closure.",
+  "rap": "Bars hit hard. Energy spikes. You’re owning the room, whether it’s virtual or real.",
+  "melodic rap": "Vibes hit deep. Feels personal, like someone’s spilling their soul on the beat.",
+  "r&b": "Late-night feels. Smooth grooves. Heartstrings tugging with every note.",
+  "hip hop": "Step up, flex. Momentum’s real. Confidence loud enough to wake the block.",
+  "afrobeats": "Can’t sit still. Feet move before your brain catches up. Pure release.",
+  "edm": "Lights, bass, chaos — and suddenly, you’re unstoppable. Time? Who cares.",
+  "pop": "Hooks that stick. Mood lifts. Feels like victory in three minutes flat.",
 };
+
 
 const ACT_TITLES = {
   "Act I": "The Awakening",
