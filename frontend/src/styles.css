@@ -1,3 +1,7 @@
+@import "locomotive-scroll/dist/locomotive-scroll.css";
+
+
+
 * {
   box-sizing: border-box;
 }
@@ -147,4 +151,23 @@ h1 {
 .track-item strong {
   display: block;
   margin-bottom: 4px;
+}
+
+html, body {
+  height: 100%;
+  /* Locomotive needs the native scrollbar disabled on body */
+  overflow: hidden;
+}
+
+.container {
+  /* container should hide native overflow; Locomotive will handle internal transforms */
+  overflow: hidden;
+}
+
+/* Optional: keep your existing app layout */
+.app {
+  /* your current styles */
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
 }
