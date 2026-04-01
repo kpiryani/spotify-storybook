@@ -26,12 +26,17 @@ api_base_url = "https://api.spotify.com/v1/"
 
 @app.route("/")
 def index():
-    return "Welcome to my Spotify App <a href='/login'>Login with Spotify</a>"
+    return (
+        "Welcome to Spotify Storybook. "
+        "Use /analyze?playlist=<playlist name> to run analysis "
+        "or /login to authenticate first."
+    )
 
 
 @app.route("/login")
 def login():
     scope = "playlist-read-private user-top-read"
+    playlist_name = request.args.get("playlist", "").strip()
 
     params = {
         "client_id": client_id,
@@ -39,6 +44,9 @@ def login():
         "redirect_uri": redirect_uri,
         "scope": scope,
     }
+
+    if playlist_name:
+        params["state"] = playlist_name
 
     return redirect(f"{auth_url}?{urllib.parse.urlencode(params)}")
 
@@ -62,6 +70,10 @@ def callback():
     session["access_token"] = token_info["access_token"]
     session["refresh_token"] = token_info["refresh_token"]
     session["expires_at"] = datetime.now().timestamp() + token_info["expires_in"]
+
+    playlist_name = request.args.get("state", "").strip()
+    if playlist_name:
+        return redirect(f"/analyze?playlist={urllib.parse.quote(playlist_name)}")
 
     return redirect("/")
 
@@ -118,12 +130,12 @@ def fetch_playlist_tracks(headers, playlist_id):
 
 @app.route("/analyze")
 def analyze_playlist():
-    if "access_token" not in session:
-        return redirect("/login")
-
     playlist_name = request.args.get("playlist", "").strip()
     if not playlist_name:
         return jsonify({"error": "Missing required query parameter: playlist"}), 400
+
+    if "access_token" not in session:
+        return redirect(f"/login?playlist={urllib.parse.quote(playlist_name)}")
 
     headers = {"Authorization": f"Bearer {session['access_token']}"}
     playlist = find_playlist_by_name(headers, playlist_name)

@@ -56,7 +56,7 @@ The Flask server starts on `http://localhost:5000`.
 ## Endpoints
 
 - `GET /login`  
-  Starts Spotify OAuth.
+  Starts Spotify OAuth. You can optionally pass `?playlist=<name>` to return to analysis automatically after login.
 
 - `GET /callback`  
   OAuth callback route used by Spotify.
@@ -74,7 +74,7 @@ http://localhost:5000/analyze?playlist=night%20lights
 ```
 
 Behavior:
-- If not authenticated, `/analyze` redirects to `/login`.
+- If not authenticated, `/analyze` redirects to `/login` and then back to `/analyze` after Spotify auth.
 - If `playlist` is missing, returns `400`.
 - If playlist is not found, returns `404`.
 
