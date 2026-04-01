@@ -1,32 +1,95 @@
 # Spotify Storybook
 
-## Welcome to this music production! :)
+## Overview
 
-This project takes in a JSON file with basic playlist information, and writes 3 acts based on the name and the playlist information to give a timeline of how music taste has evolved over time.
+Spotify Storybook turns a Spotify playlist into a 3-act genre "story".
 
-# How to Run
+The backend is now a **single Flask app** that:
+1. handles Spotify OAuth,
+2. fetches playlist + track + artist-genre data from Spotify,
+3. runs analysis in memory,
+4. returns the final acts JSON directly from one endpoint.
 
-### Step 1: Navigate to the folder "spotify-storybook/src"
+There is no longer a file-based two-step flow for normal usage.
 
-    cd spotify-storybook/src
+---
 
+## Prerequisites
 
-### Step 2: Open the file "json-retrieval.py"  
-Inside the file, find the line that sets the playlist name and replace it with the name of the playlist you want to generate acts for.
-        
+- Python 3.10+
+- A Spotify app (Client ID + Client Secret)
 
-### Step 3: Execute the following command to retrieve the raw playlist information in a JSON. 
+Install dependencies:
 
-    python json-retrieval.py
-Login to Spotify if a pop-up comes up. This file will automatically saved in the data folder and will also be shown on the screen to show you the tracks!
+```bash
+pip install flask requests python-dotenv
+```
 
+---
 
+## Environment Variables
 
-### Step 4: Generating the Acts
-After the test data appears inside the "data" folder, run this command from the same directory:
+Create a `.env` file (project root or `src/`) with:
 
-    python main.py
-If everything works correctly, you will see a success message, and the folder "output" will contain the files with the generated Acts information!
+```env
+CLIENT_ID=your_spotify_client_id
+CLIENT_SECRET=your_spotify_client_secret
+FLASK_SECRET_KEY=any_random_secret
+```
 
+> Note: `redirect_uri` is currently set in code in `src/json_retrieval.py`. Make sure the same callback URL is added in your Spotify app settings.
 
+---
+
+## Run the Unified Backend
+
+From the repository root:
+
+```bash
+python src/json_retrieval.py
+```
+
+The Flask server starts on `http://localhost:5000`.
+
+---
+
+## Endpoints
+
+- `GET /login`  
+  Starts Spotify OAuth. You can optionally pass `?playlist=<name>` to return to analysis automatically after login.
+
+- `GET /callback`  
+  OAuth callback route used by Spotify.
+
+- `GET /refresh-token`  
+  Refreshes the Spotify access token using the refresh token in session.
+
+- `GET /analyze?playlist=<playlist name>`  
+  Runs the full in-memory pipeline and returns acts JSON.
+
+Example:
+
+```text
+http://localhost:5000/analyze?playlist=night%20lights
+```
+
+Behavior:
+- If not authenticated, `/analyze` redirects to `/login` and then back to `/analyze` after Spotify auth.
+- If `playlist` is missing, returns `400`.
+- If playlist is not found, returns `404`.
+
+---
+
+## What Changed
+
+- `src/json_retrieval.py` now performs retrieval + analysis in one request flow.
+- The hardcoded playlist/file-output constants were removed from that flow.
+- No `json.dump` writes are required for the `/analyze` workflow.
+- `src/analyzer.py` now correctly uses `GENRE_PRIORITY` from `src/constants.py` without redefining it.
+
+---
+
+## Notes on `main.py`
+
+`src/main.py` is the older file-based runner and is **not required** for the unified `/analyze` endpoint flow.
 

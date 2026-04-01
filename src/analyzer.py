@@ -1,11 +1,6 @@
 from collections import defaultdict
 from constants import GENRE_PRIORITY
 
-GENRE_PRIORITY = [
-    "rap", "hip hop", "melodic rap", "edm", "r&b",
-    "trap soul", "emo rap", "afrobeats", "pop"
-]
-
 def choose_primary_genre(genres):
     """Select the most relevant genre using priority list; ignore unknown genres."""
     for g in GENRE_PRIORITY:
